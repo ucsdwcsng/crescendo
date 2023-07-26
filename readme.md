@@ -64,6 +64,8 @@ By following the above steps, you should be able to reproduce Figures 3 and 9.
 
 Please note that you need to provide the actual data in `.mat` files as the repository does not contain the original data due to its large size. You may need to adjust the paths to these `.mat` files in the MATLAB scripts depending on your local setup.
 
+Re-producing Figure 3 will take 2 human minutes and 1 machine minutes. Reproducing Figure 9 will take 1 human minute and 4 machine minutes.
+
 ## Support
 
 For any inquiries or issues running the provided code, please open an issue in this repository or contact the corresponding author.
