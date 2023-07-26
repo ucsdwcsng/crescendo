@@ -16,8 +16,6 @@ filename_list = ["sweep_lo_linearity_5msGHz_3762.5.mat",...
     "sweep_lo_linearity_29msGHz_3762.5.mat",...
     "sweep_lo_linearity_40msGHz_3762.5.mat"];
 
-
-
 % Define the sweep speeds corresponding to the files (ms/GHz)
 sweep_speeds = [5, 6, 7, 10, 19, 29, 40];
 % Convert the sweep speeds to GHz/sec
@@ -38,6 +36,8 @@ for filename = filename_list(1:end)
     load(folder_name+filename);
     
     % Apply the get_lo_linearity_metrics function to the loaded sweep data
+    % single_sweep is SDR received I/Q data of a single sweep at a given
+    % rate
     [second_derivative_smooth] = get_lo_linearity_metrics(single_sweep,midpoint);
     
     % Create a time vector for plotting
